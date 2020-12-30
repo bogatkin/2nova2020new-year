@@ -25,7 +25,7 @@ class Ajax
 
             $string = implode(';', $arr) .  "\n";
 
-            $filename = __DIR__ . '/storage/data.csv';
+            $filename = '/var/www/2nova2020new-year/data.csv';
             if (file_exists($filename) && file_put_contents($filename, $string, FILE_APPEND | LOCK_EX)) {
                 $message = 'success';
             }
